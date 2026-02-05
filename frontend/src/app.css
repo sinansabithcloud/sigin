@@ -1,0 +1,19 @@
+body {
+  background: #020617;
+  color: #22c55e;
+  text-align: center;
+}
+
+.cam {
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.badge {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #22c55e;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}

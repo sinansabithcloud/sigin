@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-webcam": "^7.2.0",
+    "socket.io-client": "^4.8.3"
+  }
+}

@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+build/
+.env
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+.env
+.vscode/
+*.log
+*.sqlite3
+media/
+static/
+sign_lstm_best3.keras

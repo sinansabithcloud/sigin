@@ -1,0 +1,29 @@
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.app {
+  padding: 20px;
+}
+
+.camera-box {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.prediction-badge {
+  background: #020617;
+  border: 2px solid #22c55e;
+  border-radius: 12px;
+  padding: 15px;
+  width: 300px;
+  margin: auto;
+}
+
+.prediction-badge h2 {
+  color: #22c55e;
+}
