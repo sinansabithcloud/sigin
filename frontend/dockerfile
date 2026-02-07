@@ -3,29 +3,23 @@ FROM node:20-alpine AS build
 
 WORKDIR /app
 
-# Copy dependency files first (cache-friendly)
 COPY package.json package-lock.json ./
+RUN npm ci
 
-RUN npm install
-
-# Copy rest of the source
 COPY . .
 
-# Build React app (creates /app/build)
+ENV CI=false
+ENV NODE_OPTIONS=--max_old_space_size=4096
 RUN npm run build
 
 
 # ---------- Production stage ----------
 FROM nginx:alpine
 
-# Remove default nginx static files
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy CRA build output to nginx
 COPY --from=build /app/build /usr/share/nginx/html
 
-# Expose nginx port
 EXPOSE 80
 
-# Start nginx
 CMD ["nginx", "-g", "daemon off;"]
