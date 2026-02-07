@@ -46,9 +46,9 @@ COOLDOWN_SECONDS = 1.5
 
 
 # --- Load MediaPipe Task models ---
-hand_model = "D:/PATIENT_SIGN_DATA/hand_landmarker.task"
-pose_model = "D:/PATIENT_SIGN_DATA/pose_landmarker_full.task"
-face_model = "D:/PATIENT_SIGN_DATA/face_landmarker.task"
+hand_model = "mediapipe_models/hand_landmarker.task"
+pose_model = "mediapipe_models/pose_landmarker_full.task"
+face_model = "mediapipe_models/face_landmarker.task"
 
 hand_options = vision.HandLandmarkerOptions(
     base_options=python.BaseOptions(model_asset_path=hand_model),
