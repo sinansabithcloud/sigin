@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Signkit-prototype: Continuous Indian Sign Language Translation
 
 This project is a prototype for real-time Continuous Indian Sign Language (ISL) to English translation. It consists of a Python Flask backend with Socket.IO for sign language recognition and a React frontend for displaying the translations.
@@ -98,3 +99,6 @@ Follow these instructions to set up and run the project.
 *   **MediaPipe Assets:** The `mediapipe_models` directory with its `.task` files is crucial for the backend's landmark detection.
 *   **Performance:** Real-time performance may vary depending on your hardware and network conditions.
 *   **CORS:** The Flask backend is configured with `cors_allowed_origins="*"` for development purposes. For production, restrict this to your frontend's domain.
+=======
+# application
+>>>>>>> 3ae086c906effbe39839a2aa3054415336dcaf86
